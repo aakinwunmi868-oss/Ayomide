@@ -1,1 +1,244 @@
-# Ayomide
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayomide | Full Stack Web Developer</title>
+    <link rel="stylesheet" href="mides.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h2 class="logo">Ayo<span>Code.</span></h2>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#qualities">My Qualities</a>
+        </nav>
+      <img class="Profile-pic" src="images/mide2-removebg-preview.png" alt="Profile">
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="welcome">WELCOME TO MY PORTFOLIO 💖</p>
+
+            <h1>Hi, I'm <span>Ayomide!</span></h1>
+
+            <h2>I'm a Full Stack Web Developer.</h2>
+
+            <p class="description">
+                I love building beautiful websites, solving problems,
+                learning new technologies, and turning creative ideas
+                into amazing digital experiences.
+            </p>
+
+            <a> Discover My Qualities </a>
+        </div>
+    </section>
+    <!--About Section-->
+    <section class="qualities" id="about">
+         <div class="section-heading">
+            <p class="subtitle">A LITTLE MORE ABOUT ME</p>
+            <h1>More Than Just <span>Coding</span></h1>
+            <p class="note">Here are three Qualities that describes me
+                Great Developmant starts with great character
+            </p>
+         </div>
+
+    <!-- Three widgets-->
+     <div class="widget" id="qualities">
+
+        <!--Honesty widget-->
+        <h3>Honesty</h3>
+      <p> I beleive in being truthful,trustworthy, and transparent.i value honesty in my work</p>
+      <button class="hi-button">HI!</button>
+     </div>
+
+     <!--Kindness widget-->
+     <div class="widget">
+         <h3>Kindness</h3>
+         <p>I beleive in treating people with respect, helping others,and spreading positivity wherever i go.</p>
+         <button class="hi-button">HI!</button>
+     </div>
+
+     <!--Patience widget-->
+     <div class="widget">
+        <h3>Patience</h3>
+        <p>Whether i'm debugging code or learning something new, I stay Patient, focused determined to find a solution</p>
+        <button class="hi-button">HI!</button>
+     </div>
+     </section>
+     <!--Footer-->
+     <footer>
+        <p>Made with 💕 by <span>Ayomide</span></p>
+    <p>Contact me: 08023785645 <br> aakinwunmi868@gmail.com</p>
+    <p>© 2026 My Website. All rights reserved.</p>
+     </footer>
+</body>
+</html>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color:rgb(218, 218, 255);
+    color: #192b50;
+}
+
+/* HEADER */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background-color: rgb(218, 218, 255);
+}
+.Profile-pic{
+    margin-right: 50px;
+}
+.logo {
+    font-size: 28px;
+    color: #2455a4;
+    font-weight: 800;
+}
+
+.logo span {
+    color: rgb(249, 32, 126);
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(139, 139, 226);
+    font-weight: 600;
+    transition: 0.3s;
+    font-size: large;
+}
+
+nav a:hover {
+    color: rgb(238, 50, 135);
+}
+
+/* HERO SECTION */
+.hero {
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 8%;
+    background: linear-gradient( rgb(218, 218, 255) , rgb(245, 45, 152), rgb(218, 218, 255))
+}
+.description{
+    font-weight: 16px;
+    max-width: 650px;
+    margin: 0 ,auto ,30px;
+    color: rgb(98, 98, 157);
+    line-height:1.8;
+}
+.hero-content{
+    max-width: 800px;
+}
+
+/*QUALITIES SECTION*/
+.qualities-section{
+    padding: 80px 85%;
+}
+.section-heading{
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+.subtitle{
+    color: rgba(231, 81, 171, 0.821);
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+.section-heading h1{
+    font-size:clamp (28px 40px);
+    color: darkblue;
+    margin-bottom: 15px;
+}
+ .section-heading h1 span{
+    color: rgb(241, 0, 149);
+}
+
+/*THREE WIDGETS IN A ROW*/
+.widgets{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 25px;
+   width: 350px;
+   margin: 0 auto;
+   text-align:center ;
+   height: auto;  
+}
+/*INDIVIDUAL WIDGET*/
+.widget{
+    flex: 1;
+    min-width: 0;
+    background:linear-gradient( rgb(255, 18, 137),darkblue) ;
+    color: white;
+    padding: 35px 25px;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hi-button{
+    border-color: none;
+    border-radius: 2px;
+    color: white;
+    background-color: rgb(255, 0, 153);
+    width: 32px;
+    height: 20px;
+    border: 0;
+}
+/*WIDGET HEADING*/
+.widget h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: white;
+}
+/*WIDGET PARAGRAPH*/
+.widget p{
+    color: whitesmoke;
+    font-size: 15px;
+}
+/*Footer*/
+footer {
+    background-color: rgb(247, 69, 193);
+    color: rgb(19, 18, 18);
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+footer span{
+    color:rgb(red green blue / alpha);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction:  column;
+        gap: 20px;
+
+    }
+}
+
