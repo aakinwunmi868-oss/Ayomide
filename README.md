@@ -242,3 +242,4 @@ footer span{
     }
 }
 
+<img width="433" height="577" alt="image" src="https://github.com/user-attachments/assets/a3143860-1a77-4787-821d-07cf739811c5" />
