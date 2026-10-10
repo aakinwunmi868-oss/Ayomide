@@ -237,6 +237,6 @@ footer span{
     .header{
         flex-direction:  column;
         gap: 20px;
-
+mide2-removebg-preview.png
     }
 }
