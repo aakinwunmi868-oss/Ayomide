@@ -69,6 +69,23 @@ nav a:hover {
 .hero-content{
     max-width: 800px;
 }
+.whatsapp-link {
+  display: inline-block;
+  background:rgb(119, 119, 233);
+  color: rgb(0, 0, 0);
+  padding: 12px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp-link:hover {
+  background: rgb(255, 5, 130);
+}
+.whatsapp-link a{
+    text-decoration:none;
+    color: rgb(0, 0, 0)
+}
 
 /*QUALITIES SECTION*/
 .qualities-section{
